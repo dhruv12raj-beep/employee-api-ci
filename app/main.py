@@ -11,3 +11,8 @@ def root():
 @app.get("/home")
 def home():
     return {"message": "Welcome to home"}
+
+
+@app.get("/employee")
+def employee():
+    return {"message": "Hello!"}
