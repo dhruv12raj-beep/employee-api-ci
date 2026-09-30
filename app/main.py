@@ -2,11 +2,12 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/')
+
+@app.get("/")
 def root():
-    return {"message":"Fastapi"}
+    return {"message": "Fastapi"}
 
-@app.get('/home')
+
+@app.get("/home")
 def home():
-    return {"message":"Welcome to home"}
-
+    return {"message": "Welcome to home"}
